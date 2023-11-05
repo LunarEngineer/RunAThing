@@ -1,23 +1,19 @@
-# RunAThing
+# RunAThing: Python
 
-What happens when you have a bunch of projects and need to maintain them all?
+Regardless oh what you're testing in Python and where, theres a fairly reusable pattern.
 
-This project abstracts a setup and forms the core of a CI-CD / workflow execution system.
+add devcontainer and run build scripts in env to pre-build lightweight dev env.
 
-It does this by building a minimal and reusable project which other repos will fork and auto-update to.
+add security, linting, others.
 
-That implies that it has hooks which can be used as actions, and so this builds frames for the hooks that will allow you to test various things fairly quickly and easily.
+merge from main on update.
 
-This assumes that you have access to a central data layer where information is stored.
+build setup.cfg and tests from core deps.
 
-Arbitrary actions.
+initial tox step builds packaging.
 
-If it's arbitrary actions then each *set* of actions will fork from this.
+declare core deps
 
-A logical and narrowing dependency chain can be explicitly established. Neato.
+fork from this for specfic py ver. collect ci. publish results to data layer.
 
-Here at the root we assume very, very, little. We assume that this is a git project. We assume that you will have some source code in src, tests you wish to run in tests, and any environmental definition you want will be declared in an env; there's also potential other things associated with each one of these projects. (Metadata, e.g.)
-
-We assume there is a data layer definition here which defines the scope of information accessible in local scope, parent scope, and potentially global scope.
-
-This thing potentially depends on other things, upstream, and is potentially depended on by other things downstream. This is *implicitly declared* by referencing the data layer and reusing the data layer as the storage mechanism.
+This branch, by itself, doesn't do anything.
