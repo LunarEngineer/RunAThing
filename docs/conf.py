@@ -1,0 +1,1 @@
+"""This is picked up by Sphinx."""

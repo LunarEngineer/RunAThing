@@ -29,7 +29,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "pip3 install -e .[dev]",
-	// "runArgs": ["--env-file",".devcontainer/devcontainer.env"],
+	"runArgs": ["--env-file",".devcontainer/devcontainer.env"],
 
 	// Configure tool-specific properties.
 	// "customizations": {},
