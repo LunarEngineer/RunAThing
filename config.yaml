@@ -1,0 +1,16 @@
+####################################################################
+#                       Auto-Build Project                         #
+# ---------------------------------------------------------------- #
+# This file is reused across the project to automatically generate #
+#   configuration documents used in ci. Those are *explicitly in   #
+#   the .gitignore file and include documentation indicating they  #
+#   are automatically generated.                                   #
+####################################################################
+project_author: A random hooman.
+project_author_email: Talk to the random hooman.
+project_name: sample_project
+project_description: A thing
+project_dependencies:
+  build_deps: ["setuptools>=42", "wheel", "setuptools_scm>=3.4"]
+  python: ["pyYaml>=6.0.1", "stupid<=1.0"]
+    
