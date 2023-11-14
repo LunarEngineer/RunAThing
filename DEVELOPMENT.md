@@ -1,6 +1,11 @@
 
 ## Development Notes
 
+## TODO:
+Note that DevContainer Features is an appropriate place to expose the thing store as a built in data layer.
+Simply define them as a feature and then they're rebuildable.
+
+Timthoughts: the pattern of cookiecutter has value in implementation, but why? fork stays current, cookiecutter needs link. cookiecutter does point back, though. I say this module should be included as a submodule for an ancillary project. Integration at that point can refine, enhance, and simplify.
 
 ```sh
 python src/utils/build_config.py
@@ -11,8 +16,6 @@ This makes a default setup.
 
 Development Plan:
 
-Tox is used, along with python packaging, to be able to install and test workflows.
-
 The Thing Store inherits this.
 
 Input Expectation:
@@ -21,7 +24,9 @@ Input Expectation:
 * Tox version.
 * Package versions.
 
-Given these, this will generate a tox.ini
+Given these, this will generate all required documentation, including a container specification and packaging, for a custom Python environment.
+
+Check out the config.yaml. It's boss.
 
 This is intended to assist enabling arbitrary actions in a central framework.
 

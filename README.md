@@ -1,16 +1,18 @@
 # RunAThing - Python
 
-So What: Before you start your project just fork this and use it as a base.
+So What: You want to run a project. You want that to be easy. You want to work with potentially everyone else. You want to just inherit a stable set of tools reusable for what you want to do. You want to *just be able to do what you want to do*.
 
-Why?
+This time, in Python.
 
-This provides a consistent and reusable base for inheriting default dependencies such that subsequent projects can be automatically updated per changes in the root. This project is monitored for security.
+Why is this not a cookiecutter?  This needs to be a cookiecutter.
 
-This will set you up with [tox](https://tox.wiki/en/latest/user_guide.html) as a local test runner and the ability to execute local actions.
+This provides a consistent and reusable base for inheriting default dependencies such that subsequent projects can be automatically updated per changes in the root. This project is monitored for security. (And as soon as I can enable it security updates will be automated.)
+
+This will set you up with [tox](https://tox.wiki/en/latest/user_guide.html) as a local test runner and the ability to execute local actions; it will also define your data scope such that you can programatically access your data layers.
 
 This mirrors a production environment, and as such it sets expectations for security, quality, and implementation.
 
-This was heavily inspired by https://github.com/cicirello/python-github-action-template/
+This was heavily inspired by https://github.com/cicirello/python-github-action-template/ and https://github.com/audreyfeldroy/cookiecutter-pypackage.
 
 ## Project Structure
 
@@ -24,6 +26,8 @@ The major configuration files for this project (which are all dynamically genera
 2. [`pyproject.toml`](pyproject.toml): Secondary configuration - This file is used but shouldn't ever really need be updated.
 3. [`setup.py`](setup.py): Ditto.
 4. [`tox.ini`](tox.ini): This is used to run the testing actions on the source code. There are a number of environments and they deserve their own documentation.
+5. TODO [`devcontainer`]
+6. TODO [`github`]
 
 The major sections of things that are convenient to understand for this project are:
 

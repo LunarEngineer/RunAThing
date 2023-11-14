@@ -28,3 +28,13 @@ project_dependencies:
 testing_environments:
   styleandformat:
     arg: 1
+container:
+  specification:
+    features:
+      actionlint:
+        source: "ghcr.io/devcontainers-contrib/features/actionlint:1"
+        args: {
+          "Silly": 1,
+          "example": 2
+        }
+  environment: 'two'
