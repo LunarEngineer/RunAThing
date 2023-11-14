@@ -1,8 +1,12 @@
 # RunAThing - Python
 
-This provides a consistent and reusable base for inheriting default dependencies such that subsequent projects can be automatically updated per changes in the root.
+So What: Before you start your project just fork this and use it as a base.
 
-This will set you up with tox as a local test runner and the ability to execute local actions.
+Why?
+
+This provides a consistent and reusable base for inheriting default dependencies such that subsequent projects can be automatically updated per changes in the root. This project is monitored for security.
+
+This will set you up with [tox](https://tox.wiki/en/latest/user_guide.html) as a local test runner and the ability to execute local actions.
 
 This mirrors a production environment, and as such it sets expectations for security, quality, and implementation.
 
@@ -14,7 +18,7 @@ This assumes that you're using setuptools to build the Python package and that y
 
 If you're using the devcontainer, that should be true.
 
-The major configuration files for this project are:
+The major configuration files for this project (which are all dynamically generated) are:
 
 1. [`setup.cfg`](setup.cfg): Primary configuration - This file declares all package dependencies *and* testing dependencies. Note the defaults and their versions. These are updated such that you may simply pull updates from this file and they can be reasonably assumed they are the most secure and appropriate.
 2. [`pyproject.toml`](pyproject.toml): Secondary configuration - This file is used but shouldn't ever really need be updated.
