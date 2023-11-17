@@ -6,6 +6,8 @@ This time, in Python.
 
 Why is this not a cookiecutter?  This needs to be a cookiecutter.
 
+You want to test this? `pip install -r requirements.txt` followed by `pytest`
+
 This provides a consistent and reusable base for inheriting default dependencies such that subsequent projects can be automatically updated per changes in the root. This project is monitored for security. (And as soon as I can enable it security updates will be automated.)
 
 This will set you up with [tox](https://tox.wiki/en/latest/user_guide.html) as a local test runner and the ability to execute local actions; it will also define your data scope such that you can programatically access your data layers.

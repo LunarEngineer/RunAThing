@@ -1,0 +1,42 @@
+{
+    "project_slug": "run-a-thing",
+    "project_author": "A random hooman.",
+    "project_author_email": "Talk to the random hooman.",
+    "project_name": "sample_project",
+    "project_description": "A thing",
+    "project_license": "A license",
+    "project_dependencies": {
+        "python": {
+            "min_version": "'3.10'",
+            "max_version": "'3.12'",
+            "deps": ["pyYaml>=6.0.1"],
+            "build_deps": [
+                "setuptools>=42",
+                "wheel",
+                "setuptools_scm>=3.4"
+            ],
+            "test_deps": [
+                "pytest>=7.0",
+                "tox>=4.11.3"
+            ]
+        }
+    },
+    "testing_environments": {
+        "styleandformat": {
+            "arg": 1
+        }
+    },
+    "container": {
+        "specification": {
+            "features": {
+                "actionlint": {
+                    "source": "ghcr.io/devcontainers-contrib/features/actionlint:1",
+                    "args": {
+                        "Silly": 1,
+                        "example": 2
+                    }
+                }
+            }
+        }
+    }
+}
