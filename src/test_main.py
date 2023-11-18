@@ -47,4 +47,6 @@ def test_deployment(test_case):
         # It *must* be specified with a full file schema.
         make_project(f'file://{t}/repo.git', f'{t}/test', no_input=True)
         # This is what my file structure should look like.
-        raise Exception(os.listdir(f'{t}/test/run-a-thing'))
+        # with open(f'{t}/test/run-a-thing/pyproject.toml', 'r') as f:
+        #     _ = f.readlines()
+        raise Exception(os.listdir(f'{t}/test/run-a-thing'), "_")

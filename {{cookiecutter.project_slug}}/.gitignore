@@ -1,10 +1,6 @@
 ####################################################################
 #               Explicitly ignore build artifacts                  #
 ####################################################################
-setup.py
-setup.cfg
-pyproject.toml
-tox.ini
 dist/
 build/
 *.egg-info/
