@@ -4,7 +4,6 @@ from cookiecutter.main import cookiecutter
 
 
 def make_project(repo_folder, output_folder, no_input):
-    # raise Exception(repo_folder, output_folder, no_input)
     cookiecutter(
         template=repo_folder,
         checkout=None,

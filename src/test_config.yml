@@ -1,5 +1,0 @@
-default_context:
-    full_name: "Testing Function"
-    email: "nomail@example.com"
-cookiecutters_dir: "/workspaces/cookiecutter/cookiecutters"
-replay_dir: "/workspaces/cookiecutter/replays"
