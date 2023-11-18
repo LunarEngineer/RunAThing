@@ -2,11 +2,13 @@
 
 So What: You want to run a project. You want that to be easy. You want to work with potentially everyone else. You want to just inherit a stable set of tools reusable for what you want to do. You want to *just be able to do what you want to do*.
 
+You also want this to maybe go to production some day...
+
 This time, in Python.
 
 Why is this not a cookiecutter?  This needs to be a cookiecutter.
 
-You want to test this? `pip install -r requirements.txt` followed by `pytest`
+You want to test this? `pip install -r requirements.txt` followed by `python -m pytest -s src/test_main.py`
 
 This provides a consistent and reusable base for inheriting default dependencies such that subsequent projects can be automatically updated per changes in the root. This project is monitored for security. (And as soon as I can enable it security updates will be automated.)
 

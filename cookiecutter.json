@@ -7,8 +7,8 @@
     "project_license": "A license",
     "project_dependencies": {
         "python": {
-            "min_version": "'3.10'",
-            "max_version": "'3.12'",
+            "min_version": "3.10",
+            "max_version": "3.12",
             "deps": ["pyYaml>=6.0.1"],
             "build_deps": [
                 "setuptools>=42",
