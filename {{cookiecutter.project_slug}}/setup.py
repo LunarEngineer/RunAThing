@@ -1,5 +1,6 @@
 ${{ cookiecutter.template_components.header }}
 
+# Simple test.
 from setuptools import setup
 
 
