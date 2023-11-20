@@ -1,6 +1,6 @@
-${{ TEMPLATE_HEADER }}
+${{ cookiecutter.TEMPLATE_HEADER }}
 [build-system]
-requires = ${{ _build_reqs }}
+requires = ${{ cookiecutter.python.build_reqs }}
 build-backend = "setuptools.build_meta"
 
 
