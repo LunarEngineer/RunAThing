@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # https://github.com/actions/checkout
+    - uses: actions/checkout@v4
+
+    # https://github.com/actions/setup-python
+    # https://github.com/pypa/setuptools
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: |
+            3.10
+            3.11
+            3.12
+
+    - name: Run Local Test
+      run: tox -e pytest
