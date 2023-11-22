@@ -1,6 +1,15 @@
 
 ## Development Notes
 
+File Checklist:
+
+* Setup.cfg
+* pyproject.toml
+* setup.py
+* tox.ini
+
+https://github.com/cookiecutter/cookiecutter/blob/main/.github/workflows/tests.yml
+
 ## TODO:
 Note that DevContainer Features is an appropriate place to expose the thing store as a built in data layer.
 Simply define them as a feature and then they're rebuildable.

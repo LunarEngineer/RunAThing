@@ -1,0 +1,9 @@
+{
+    "test_description": {
+        "name": "setup.cfg packaging",
+        "description": [
+            "Creates a Python project which maintains all metadata in setup.cfg.",
+            "This uses Tox to test packaging, documentation, functionality, format, and style."
+        ]
+    }
+}
